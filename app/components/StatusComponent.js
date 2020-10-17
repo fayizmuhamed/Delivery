@@ -93,7 +93,7 @@ export default class StatusComponent extends React.Component {
                                 <Button 
                                     title={language.save}
                                     buttonStyle={{backgroundColor: language.primary, borderRadius: 50}}
-                                    titleStyle={{fontFamily: 'Gilroy-Bold', color: '#fff'}}
+                                    titleStyle={{fontFamily: 'Gilroy-Bold', color: language.tertiary}}
                                     onPress={() => this.save()}
                                 />
                             </View>

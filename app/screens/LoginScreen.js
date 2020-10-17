@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import { View, Text, SafeAreaView, Image, TouchableOpacity, ToastAndroid, StyleSheet, TextInput, ActivityIndicator } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+import Feather from 'react-native-vector-icons/Feather';
 import Profile from '../assets/images/profile';
 import * as language from '../constants/languages';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import { EventRegister } from 'react-native-event-listeners';
 import AsyncStorage from '@react-native-community/async-storage';
 import { loginUser } from '../services/services';
@@ -85,7 +85,11 @@ export default class LoginScreen extends React.Component {
 
 
 					<View style={{alignItems: 'center'}}>
-						<Profile width={100} height={100} />
+						<View style={{justifyContent: 'center'}}>
+							<View style={{backgroundColor: language.primary, justifyContent: 'center', alignItems: 'center', padding: 20, borderRadius: 17}}>
+								<Feather name="user" color={language.tertiary} size={40} />
+							</View>
+						</View>
 						<View style={{...style.viewWrapper}}>
 							<Text style={{...style.headingStyle}}>{language.loginText}</Text>
 							<View style={style.headingUnderline} />
@@ -95,7 +99,7 @@ export default class LoginScreen extends React.Component {
 
 						<View style={{marginTop: 20, flexDirection: 'row'}}>
 							<View style={{position:'absolute', left: 15, right: 0, top: 0, bottom: 0, justifyContent: 'center', zIndex: 1, width: 45}}>
-								<Icon name='user-o' size={20}/>
+								<Feather name='user' size={20} color={language.primary}/>
 							</View> 
 							<View style={{flex: 1,borderRadius: 50,}}>
 								<TextInput
@@ -112,8 +116,9 @@ export default class LoginScreen extends React.Component {
 							</View>
 						</View>
 						<View style={{marginTop: 20, flexDirection: 'row'}}>
+							
 							<View style={{position:'absolute', left: 15, right: 0, top: 0, bottom: 0, justifyContent: 'center', zIndex: 1, width: 45}}>
-								<Icon name='lock' size={20}/>
+								<Feather name='lock' size={20} color={language.primary}/>
 							</View> 
 							<View style={{flex: 1,borderRadius: 50,}}>
 								<TextInput
@@ -150,7 +155,7 @@ export default class LoginScreen extends React.Component {
 const style = StyleSheet.create({
 	headingStyle: {
 		fontFamily: 'Gilroy-Bold',
-		color: language.tertiary,
+		color: language.textColor,
 		fontSize: 22,
 	},
 	viewWrapper: {
@@ -186,6 +191,6 @@ const style = StyleSheet.create({
 	},
 	buttonText: {
 		fontFamily: 'Gilroy-Bold', 
-		color: language.ternary
+		color: language.tertiary
 	}
 })

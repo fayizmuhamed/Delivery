@@ -1,4 +1,4 @@
-package com.delivery;
+package com.delivery.xenia;
 
 import android.app.Application;
 

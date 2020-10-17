@@ -7,7 +7,7 @@ import { DrawerItems } from 'react-navigation';
 import AsyncStorage from '@react-native-community/async-storage';
 import { getEmployeeInfo } from '../services/services';
 import * as api from '../constants/services';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Feather from 'react-native-vector-icons/Feather';
 import { EventRegister } from 'react-native-event-listeners';
 
 export default class SideBarComponent extends React.Component {
@@ -77,7 +77,7 @@ export default class SideBarComponent extends React.Component {
                             this.state.userImage != "" ?
                                 <Image source={{ uri: this.state.userImage }} style={{width: 50, height: 50, borderRadius: Platform.OS === 'ios' ? 200/2 : 200, overflow:'hidden' }} resizeMode="contain"/>
                             :
-                                <FontAwesomeIcon name="user-circle-o" size={50} color = {language.black} />
+                                <Feather name="user" size={50} color = {language.primary} />
 
                         }
 
@@ -105,7 +105,8 @@ export default class SideBarComponent extends React.Component {
                     <TouchableOpacity onPress = {() => this.signout()}>
                         <View style={styles.item}>
                             <View style={styles.iconContainer}>
-                                <Icon name="user-o" size={20} color={language.black}/>
+
+                                <Feather name="log-out" size={20} color={language.black}/>
                             </View>
                             <Text style={styles.label}>Logout</Text>
                         </View>

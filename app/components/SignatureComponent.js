@@ -172,7 +172,7 @@ export default class SignatureComponent extends React.Component {
                                 <Button 
                                     title={language.signature}
                                     buttonStyle={{backgroundColor: language.primary, borderRadius: 50}}
-                                    titleStyle={{fontFamily: 'Gilroy-Bold', color: '#fff'}}
+                                    titleStyle={{fontFamily: 'Gilroy-Bold', color: language.tertiary}}
                                     onPress={() => this.getSignature()}
                                 />
                             </View>
@@ -201,7 +201,7 @@ export default class SignatureComponent extends React.Component {
                                     <Button 
                                         title={language.close}
                                         buttonStyle={{backgroundColor: language.danger, borderRadius: 50}}
-                                        titleStyle={{fontFamily: 'Poppins-Bold', color: '#fff'}}	
+                                        titleStyle={{fontFamily: 'Poppins-Bold', color: '#fff'}}
                                         onPress={() => this.setState({isSignature: false, acceptorSignature: null})}
                                     />
                                 </View>
@@ -209,7 +209,7 @@ export default class SignatureComponent extends React.Component {
                                     <Button 
                                         title={language.save}
                                         buttonStyle={{backgroundColor: language.primary, borderRadius: 50}}
-                                        titleStyle={{fontFamily: 'Poppins-Bold', color: '#fff'}}
+                                        titleStyle={{fontFamily: 'Poppins-Bold', color: language.tertiary}}
                                         onPress={() => this.saveSignature()}
                                     />
                                 </View>

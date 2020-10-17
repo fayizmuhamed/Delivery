@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import { Text, ScrollView, View, StyleSheet, TouchableOpacity, Linking, Platform, ToastAndroid } from 'react-native';
 import * as language from '../constants/languages';
 import SpinnerComponent from  './SpinnerComponent';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import Communications from 'react-native-communications';
 import { withNavigation } from 'react-navigation';
 import PhoneCallComponent from './PhoneCallComponent';
 import Moment from 'moment';
+import Feather from 'react-native-vector-icons/Feather';
 
 class PickupListComponent extends React.Component{
 
@@ -100,14 +100,14 @@ class PickupListComponent extends React.Component{
 
 															<View>
 																<TouchableOpacity style={{...style.iconWrapper}} onPress={() => this.setState({ isCallModal: true, phoneList: [data.customerMobileNo1, data.customerMobileNo2] })}>
-																	<Icon name="phone" size={20} />
+																	<Feather name="phone" size={20}  color={language.tertiary} />
 																</TouchableOpacity>
 															</View>
 
 														:
 
 														<TouchableOpacity style={{...style.iconWrapper}} onPress={() => this.phoneCall( (data.customerMobileNo1 != null) ? data.customerMobileNo1  : data.customerMobileNo2 )}>
-																<Icon name="phone" size={20} />
+																<Feather name="phone" size={20}  color={language.tertiary} />
 														</TouchableOpacity>
 
 													}
@@ -117,7 +117,7 @@ class PickupListComponent extends React.Component{
 
 												<View style={{flex: 0.5, }}>
 													<TouchableOpacity style={{...style.iconWrapper}} onPress={() => this.openMaps((data.customerLatitude != "") ? data.customerLatitude: 0, (data.customerLongitude != "") ? data.customerLongitude: 0)}>
-														<Icon name="location-arrow" size={20} />
+														<Feather name="navigation" size={20}  color={language.tertiary} />
 													</TouchableOpacity>
 												</View> 
 											</View>

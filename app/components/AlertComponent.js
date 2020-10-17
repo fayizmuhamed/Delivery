@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { Text, View, StyleSheet, TouchableHighlight, Modal } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import * as language from '../constants/languages';
 
 export default class AlertComponent extends React.Component {
@@ -68,7 +67,7 @@ const style = StyleSheet.create({
     elevation: 2
   },
   textStyle: {
-    color: "white",
+    color:language.tertiary,
     fontWeight: "bold",
     textAlign: "center",
     fontFamily: 'Gilroy-Light'

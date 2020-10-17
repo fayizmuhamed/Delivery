@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Text, View, StyleSheet, Image, TouchableOpacity, Modal, TextInput, ScrollView } from 'react-native';
 import * as language from '../constants/languages';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Button } from 'react-native-elements';
 import StatusComponent from './StatusComponent';
 
@@ -53,9 +52,6 @@ export default class PickupDetailsComponent extends React.Component{
                                             <View style={{justifyContent: 'flex-start', flex: 3}}>
                                                 <Text style={{fontSize: 16, fontFamily: 'Gilroy-Bold', flexWrap: 'wrap'}}>{data.name}</Text>
                                             </View>
-                                            {/* <TouchableOpacity onPress={() => this.setState({ isVisible: true })} style={{justifyContent: 'flex-end', flex: 1}}>
-                                                 <Icon name='edit' style={{fontSize: 20, width: 20, color: language.primary}} />
-                                            </TouchableOpacity>      */}
                                         </View>
                                     </View>
                                     <View style={{justifyContent: 'center', flex: 1}}>

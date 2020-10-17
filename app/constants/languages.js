@@ -1,8 +1,14 @@
 
 // color
+/*------------------------------------COLOR CODE-------------------------------------------*/
+//export const primary = '#2065B2';  //vyapar store
+//export const secondary = '#237EE2'; // vyapar store
 export const primary = '#FBC02D'
 export const secondary = '#FFDE8D'
-export const tertiary = '#212121';
+
+
+export const tertiary = '#fff';
+export const textColor = "#212121";
 export const danger = 'red';
 export const green = '#4cd137';
 export const blueColor = '#3B5998';
