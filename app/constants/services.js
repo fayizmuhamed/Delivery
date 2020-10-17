@@ -1,7 +1,7 @@
 // API
 
 //export const companyidValue = 13;
-export const companyidValue = 18;
+export const companyidValue = 9;
 export const domainUrl = 'https://api.estorelogin.com/';
 
 // login
