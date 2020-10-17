@@ -1,4 +1,4 @@
-package com.delivery.samrddhi;
+package com.delivery.tcmart;
 
 import android.os.Bundle;
 
@@ -18,6 +18,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "SamrddhiDelivery";
+        return "TcMartDelivery";
     }
 }
