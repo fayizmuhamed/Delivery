@@ -1,4 +1,4 @@
-package com.delivery.tcmart;
+package com.delivery.kiscomart;
 
 import android.app.Application;
 
