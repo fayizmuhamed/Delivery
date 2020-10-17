@@ -1,4 +1,4 @@
-package com.delivery.kadappuramfish;
+package com.delivery.kwickbasket;
 
 import android.app.Application;
 
