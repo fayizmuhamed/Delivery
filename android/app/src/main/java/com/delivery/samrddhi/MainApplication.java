@@ -1,4 +1,4 @@
-package com.delivery.kadappuramfish;
+package com.delivery.samrddhi;
 
 import android.app.Application;
 
