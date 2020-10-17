@@ -2,12 +2,11 @@ import React, {Component} from 'react';
 import { Text, SafeAreaView, ScrollView, View, StyleSheet, TouchableOpacity, Platform, Linking, ToastAndroid } from 'react-native';
 import * as language from '../constants/languages';
 import InnerPageHeader from '../components/InnerPageHeader';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import SpinnerComponent from '../components/SpinnerComponent';
 import Usericon from '../assets/images/Usericon';
 import Communications from 'react-native-communications';
 import { Card } from 'react-native-paper'
-import Material from 'react-native-vector-icons/MaterialIcons';
+import Feather from 'react-native-vector-icons/Feather';
 import { Button } from 'react-native-elements';
 import ProductDetailsComponent from '../components/ProductDetailsComponent';
 import PickupDetailsComponent from '../components/PickupDetailsComponent';
@@ -436,7 +435,7 @@ export default class HomeScreen extends React.Component{
 
                         <View style={{flex: 1, marginRight: 10 }}>
                             <TouchableOpacity style={{...style.iconWrapper}} onPress={() => this.setState({ isCallModal: true })}>
-                                <Icon name="phone" size={20} />
+                            <Feather name="phone" color={language.tertiary} size={20} />
                             </TouchableOpacity>
                             
                             <PhoneCallComponent
@@ -452,7 +451,7 @@ export default class HomeScreen extends React.Component{
 
                         <TouchableOpacity style={{...style.iconWrapper}}
                          onPress={() => this.phoneCall( (this.state.orderAddresses.mobileNo1 != null) ? this.state.orderAddresses.mobileNo1  : this.state.orderAddresses.mobileNo2 )}>
-                                <Icon name="phone" size={20} />
+                                 <Feather name="phone" color={language.tertiary} size={20} />
                         </TouchableOpacity>
 
                     </View>
@@ -460,7 +459,7 @@ export default class HomeScreen extends React.Component{
                 }
                 <View style={{flex: 1}}>
                     <TouchableOpacity style={{...style.iconWrapper}} onPress={() => this.openMaps((this.state.orderAddresses.latitude != "") ? this.state.orderAddresses.latitude: 0, (this.state.orderAddresses.longitude != "") ? this.state.orderAddresses.longitude: 0)}>
-                        <Icon name="location-arrow" size={20} />
+                        <Feather name="navigation" color={language.tertiary} size={20} />
                     </TouchableOpacity>
                 </View>
             </View>
@@ -484,7 +483,7 @@ export default class HomeScreen extends React.Component{
 
                             <View style={{flex: 1, marginRight: 10 }}>
                                 <TouchableOpacity style={{...style.iconWrapper}} onPress={() => this.setState({ isCallModal: true })}>
-                                    <Icon name="phone" size={20} />
+                                    <Feather name="phone" color={language.tertiary} size={20} />
                                 </TouchableOpacity>
                                 
                                 <PhoneCallComponent
@@ -499,7 +498,7 @@ export default class HomeScreen extends React.Component{
                         <View style={{flex: 1, marginRight: 10 }}>
 
                             <TouchableOpacity style={{...style.iconWrapper}} onPress={() => this.phoneCall( (this.state.returnData.customerMobileNo1 != null) ? this.state.returnData.customerMobileNo1  : this.state.returnData.customerMobileNo2 )}>
-                                    <Icon name="phone" size={20} />
+                                <Feather name="phone" color={language.tertiary} size={20} />
                             </TouchableOpacity>
 
                         </View>
@@ -507,7 +506,7 @@ export default class HomeScreen extends React.Component{
                     }
                     <View style={{flex: 1}}>
                         <TouchableOpacity style={{...style.iconWrapper}} onPress={() => this.openMaps((this.state.returnData.customerLatitude != null) ? this.state.returnData.customerLatitude: 0, (this.state.returnData.customerLongitude != null) ? this.state.returnData.customerLongitude: 0)}>
-                            <Icon name="location-arrow" size={20} />
+                            <Feather name="navigation" color={language.tertiary} size={20} />
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -638,7 +637,7 @@ export default class HomeScreen extends React.Component{
                             <View style={{...style.cardWrapper, paddingBottom: 10}}>
 
                                 <View style={{padding: 15, backgroundColor: language.primary, alignItems: 'center'}}>
-                                    <Text style={{color: '#575757', fontWeight: 'bold'}}>{language.orderDetails}</Text>
+                                    <Text style={{color: language.tertiary, fontWeight: 'bold'}}>{language.orderDetails}</Text>
                                 </View>
 
                                 <ProductDetailsComponent orderItems = { this.state.orderItems } mode = "delivery"/>
@@ -657,13 +656,13 @@ export default class HomeScreen extends React.Component{
                                 <View style={{...style.customCardWrapper, paddingBottom: 10}}>
                                     <View style={{flexDirection: 'row', padding: 5 }}>
                                         <View style={{...style.iconWrapper}} >
-                                            <Material name="payment" size={20}/>
+                                            <Feather name="credit-card" size={20} color={language.tertiary}/>
                                         </View>
 
                                         <View style={{ flex: 2, marginLeft: 20}}>
                                             <View style={{flexDirection: 'row'}}>
                                                 <View style={{flex: 1, alignItems: 'flex-start'}}>
-                                                    <Text style={{color: '#575757', fontWeight: 'bold'}}>{language.paymentLabel}</Text>
+                                                    <Text style={{color: language.textColor, fontWeight: 'bold'}}>{language.paymentLabel}</Text>
                                                 </View>
                                             </View>
                                             <View>
@@ -682,7 +681,7 @@ export default class HomeScreen extends React.Component{
                                 <View style={{...style.cardWrapper, paddingBottom: 10}}>
 
                                     <View style={{padding: 15, backgroundColor: language.primary, alignItems: 'center'}}>
-                                        <Text style={{color: '#575757', fontWeight: 'bold'}}>{language.returnDetails}</Text>
+                                        <Text style={{color: language.tertiary, fontWeight: 'bold'}}>{language.returnDetails}</Text>
                                     </View>
 
                                     <PickupDetailsComponent 
@@ -696,7 +695,7 @@ export default class HomeScreen extends React.Component{
                             <View style={{...style.cardWrapper, paddingBottom: 10}}>
 
                                 <View style={{padding: 15, backgroundColor: language.primary, alignItems: 'center'}}>
-                                    <Text style={{color: '#575757', fontWeight: 'bold'}}>{(this.state.type == "PICKUP") ? language.returnDetails : language.orderDetails}</Text>
+                                    <Text style={{color: language.tertiary, fontWeight: 'bold'}}>{(this.state.type == "PICKUP") ? language.returnDetails : language.orderDetails}</Text>
                                 </View>
 
                                 {
@@ -713,13 +712,13 @@ export default class HomeScreen extends React.Component{
                                         <View style={{...style.customCardWrapper, paddingBottom: 10}}>
                                             <View style={{flexDirection: 'row', padding: 5 }}>
                                                 <View style={{...style.iconWrapper}} >
-                                                    <Material name="payment" size={20}/>
+                                                    <Feather name="eye" size={20} color={language.tertiary}/>
                                                 </View>
 
                                                 <View style={{ flex: 2, marginLeft: 20}}>
                                                     <View style={{flexDirection: 'row', justifyContent: "center", alignItems: "center"}}>
                                                         <View style={{flex: 1, alignItems: 'flex-start'}}>
-                                                            <Text style={{color: '#575757', fontWeight: 'bold'}}>Return Status : </Text>
+                                                            <Text style={{color: language.textColor, fontWeight: 'bold'}}>Return Status : </Text>
                                                         </View>
                                                         <View>
                                                             <Text>{(this.state.returnData.returnStatus != null) ? this.state.returnData.returnStatus : null}</Text>
@@ -736,7 +735,7 @@ export default class HomeScreen extends React.Component{
                                             <View style={{...style.customCardWrapper, paddingBottom: 10}}>
                                                 <View style={{flexDirection: 'row'}}>
                                                     <View style={style.sourceTabelDataSWrapper}>
-                                                        <Text style={{fontWeight: 'bold', color: "#575757"}}>RETURNED at {Moment(this.state.returnData.collectionDate).format('LT')} {Moment().format('DD-MM-YYYY')}</Text>
+                                                        <Text style={{fontWeight: 'bold', color: language.textColor}}>RETURNED at {Moment(this.state.returnData.collectionDate).format('LT')} {Moment().format('DD-MM-YYYY')}</Text>
                                                     </View>
                                                 </View>
                                             </View>
@@ -767,13 +766,13 @@ export default class HomeScreen extends React.Component{
                                         <View style={{...style.customCardWrapper, paddingBottom: 10}}>
                                             <View style={{flexDirection: 'row', padding: 5 }}>
                                                 <View style={{...style.iconWrapper}} >
-                                                    <Material name="payment" size={20}/>
+                                                    <Feather name="credit-card" size={20} color={language.tertiary}/>
                                                 </View>
 
                                                 <View style={{ flex: 2, marginLeft: 20}}>
                                                     <View style={{flexDirection: 'row'}}>
                                                         <View style={{flex: 1, alignItems: 'flex-start'}}>
-                                                            <Text style={{color: '#575757', fontWeight: 'bold'}}>{language.paymentLabel}</Text>
+                                                            <Text style={{color: language.textColor, fontWeight: 'bold'}}>{language.paymentLabel}</Text>
                                                         </View>
                                                     </View>
                                                     <View>
@@ -786,13 +785,13 @@ export default class HomeScreen extends React.Component{
                                         <View style={{...style.customCardWrapper, paddingBottom: 10}}>
                                             <View style={{flexDirection: 'row', padding: 5 }}>
                                                 <View style={{...style.iconWrapper}} >
-                                                    <Material name="payment" size={20}/>
+                                                    <Feather name="eye" size={20} color={language.tertiary}/>
                                                 </View>
 
                                                 <View style={{ flex: 2, marginLeft: 20}}>
                                                     <View style={{flexDirection: 'row', justifyContent: "center", alignItems: "center"}}>
                                                         <View style={{flex: 1, alignItems: 'flex-start'}}>
-                                                            <Text style={{color: '#575757', fontWeight: 'bold'}}>{language.status}</Text>
+                                                            <Text style={{color: language.textColor, fontWeight: 'bold'}}>{language.status}</Text>
                                                         </View>
                                                         <View>
                                                             <Text>{(this.state.orderData.status != null) ? this.state.orderData.status : null}</Text>
@@ -809,7 +808,7 @@ export default class HomeScreen extends React.Component{
                                             <View style={{...style.customCardWrapper, paddingBottom: 10}}>
                                                 <View style={{flexDirection: 'row'}}>
                                                     <View style={style.sourceTabelDataSWrapper}>
-                                                        <Text style={{fontWeight: 'bold', color: "#575757"}}>DELIVERED at {Moment(this.state.orderData.deliveredDate).format('LT')} {Moment().format('DD-MM-YYYY')}</Text>
+                                                        <Text style={{fontWeight: 'bold', color: language.textColor}}>DELIVERED at {Moment(this.state.orderData.deliveredDate).format('LT')} {Moment().format('DD-MM-YYYY')}</Text>
                                                     </View>
                                                 </View>
                                             </View>
@@ -843,18 +842,21 @@ export default class HomeScreen extends React.Component{
                                                 <ButtonComponent
                                                     title= {language.cancelLabel}
                                                     buttonStyle={{borderRadius: 50, backgroundColor: '#f1f2f6', padding: 12}}
+                                                    titleStyle={{fontFamily: 'Gilroy-Bold', color: language.textColor}}
                                                     onPress = {() => this.reasonForCancel()}
                                                 />
 
                                                 <ButtonComponent
                                                     title= {language.postponeLabel}
                                                     buttonStyle={{borderRadius: 50, backgroundColor: '#f1f2f6', padding: 12}}
+                                                    titleStyle={{fontFamily: 'Gilroy-Bold', color: language.textColor}}
                                                     onPress = {() => this.reasonForStatus()}
                                                 />
 
                                                 <ButtonComponent
                                                     title= {language.deliveryLabel}
                                                     buttonStyle={{borderRadius: 50, backgroundColor: language.primary, padding: 12}}
+                                                    titleStyle={{fontFamily: 'Gilroy-Bold', color: language.tertiary}}
                                                     onPress = {() => this.setState({ isSignatureModal: true })}
                                                 />
 
@@ -870,12 +872,14 @@ export default class HomeScreen extends React.Component{
                                             <ButtonComponent
                                                 title= {language.rejectLabel}
                                                 buttonStyle={{borderRadius: 50, backgroundColor: '#f1f2f6', padding: 12}}
+                                                titleStyle={{fontFamily: 'Gilroy-Bold', color: language.textColor}}
                                                 onPress = {() => this.reasonForReject()}
                                             />
 
                                             <ButtonComponent
                                                 title= {language.pickedLabel}
                                                 buttonStyle={{borderRadius: 50, backgroundColor: language.primary, padding: 12}}
+                                                titleStyle={{fontFamily: 'Gilroy-Bold', color: language.tertiary}}
                                                 onPress = {() => this.setState({ isPickUpModal: true })}
                                             />  
 

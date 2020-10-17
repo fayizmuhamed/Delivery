@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Modal } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import * as language from '../constants/languages';
 import Communications from 'react-native-communications';
+import Feather from 'react-native-vector-icons/Feather';
 
 export default class PhoneCallComponent extends React.Component {
 
@@ -33,7 +33,7 @@ export default class PhoneCallComponent extends React.Component {
                                 </View>
                                 <View style={{ flex: 1, justifyContent: 'center', alignItems: 'flex-end' }}>
                                     <TouchableOpacity style={{...style.iconWrapper, width: 50}} onPress={() => this.phoneCall(val) }>
-                                        <Icon name="phone" size={20} />
+										<Feather name="phone" color={language.tertiary} size={20} />
                                     </TouchableOpacity>
                                 </View>
                             </View>

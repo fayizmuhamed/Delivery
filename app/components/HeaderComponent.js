@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import { Text, View, StyleSheet, TouchableOpacity} from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
 import * as language from '../constants/languages';
 import { withNavigation } from 'react-navigation';
-
+import Feather from 'react-native-vector-icons/Feather';
 class HeaderComponent extends React.Component{
 
 	render() {
@@ -11,7 +10,7 @@ class HeaderComponent extends React.Component{
             <View style={{flexDirection: 'row', padding: 15}}>
 				<View style={{ flex:1, alignItems: 'flex-start', justifyContent: 'center'}}>
                     <TouchableOpacity onPress = {() => this.props.navigation.openDrawer()}>
-                            <Icon name="ios-menu" size={25} color={language.primary}/>
+                            <Feather name="menu" size={25} color={language.primary}/>
                     </TouchableOpacity>
 				</View>
                 <View style={{ flex:2, alignItems: 'center', justifyContent: 'center'}}>

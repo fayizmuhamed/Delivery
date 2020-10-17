@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { Text, ScrollView, View, StyleSheet, TouchableOpacity, Linking, Platform, ToastAndroid } from 'react-native';
 import * as language from '../constants/languages';
 import SpinnerComponent from  './SpinnerComponent';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import Communications from 'react-native-communications';
 import { withNavigation } from 'react-navigation';
 import PhoneCallComponent from './PhoneCallComponent';
@@ -118,7 +117,7 @@ class HistoryListComponent extends React.Component{
 										<View style={{flex: 1}}>
                                                 
                                             <View style={{ backgroundColor: (data.type == "DELIVERY") ? language.primary : "yellow", padding: 5, justifyContent: 'center', alignItems: 'center', borderRadius: 5}}>
-                                                <Text>{data.type}</Text>
+                                                <Text style={{color: language.tertiary}}>{data.type}</Text>
                                             </View>
 											
 										</View>

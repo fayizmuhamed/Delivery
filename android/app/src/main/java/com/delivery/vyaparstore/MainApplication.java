@@ -1,4 +1,4 @@
-package com.delivery;
+package com.delivery.vyaparstore;
 
 import android.app.Application;
 

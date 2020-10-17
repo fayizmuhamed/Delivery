@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import { Text, ScrollView, View, StyleSheet, TouchableOpacity, Linking, Platform, ToastAndroid } from 'react-native';
 import * as language from '../constants/languages';
 import SpinnerComponent from  './SpinnerComponent';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import Communications from 'react-native-communications';
 import { withNavigation } from 'react-navigation';
 import PhoneCallComponent from './PhoneCallComponent';
 import Moment from 'moment';
+import Feather from 'react-native-vector-icons/Feather';
 
 class ProductListComponent extends React.Component{
 
@@ -100,14 +100,14 @@ class ProductListComponent extends React.Component{
 
 															<View>
 																<TouchableOpacity style={{...style.iconWrapper}} onPress={() => this.setState({ isCallModal: true, phoneList: [data.orderAddresses[0].mobileNo1, data.orderAddresses[0].mobileNo2] })}>
-																	<Icon name="phone" size={20} />
+																	<Feather name="phone" size={20} color={language.tertiary}/>
 																</TouchableOpacity>
 															</View>
 
 														:
 
 														<TouchableOpacity style={{...style.iconWrapper}} onPress={() => this.phoneCall( (data.orderAddresses[0].mobileNo1 != null) ? data.orderAddresses[0].mobileNo1  : data.orderAddresses[0].mobileNo2 )}>
-																<Icon name="phone" size={20} />
+																<Feather name="phone" size={20} color={language.tertiary}/>
 														</TouchableOpacity>
 
 													}
@@ -117,7 +117,7 @@ class ProductListComponent extends React.Component{
 
 												<View style={{flex: 0.5, }}>
 													<TouchableOpacity style={{...style.iconWrapper}} onPress={() => this.openMaps((data.orderAddresses[0].latitude != "") ? data.orderAddresses[0].latitude: 0, (data.orderAddresses[0].longitude != "") ? data.orderAddresses[0].longitude: 0)}>
-														<Icon name="location-arrow" size={20} />
+														<Feather name="navigation" size={20}  color={language.tertiary} />
 													</TouchableOpacity>
 												</View> 
 											</View>

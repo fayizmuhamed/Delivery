@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { View, Text, SafeAreaView, Image, TouchableOpacity, ToastAndroid, StyleSheet, TextInput, ActivityIndicator } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import * as language from '../constants/languages';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Feather from 'react-native-vector-icons/Feather';
 import InnerPageHeader from '../components/InnerPageHeader';
 import SpinnerComponent from '../components/SpinnerComponent';
 import { EventRegister } from 'react-native-event-listeners';
@@ -123,7 +123,7 @@ export default class ChangePasswordScreen extends React.Component{
 
                                 <View style={{marginTop: 20, flexDirection: 'row'}}>
                                     <View style={{position:'absolute', left: 15, right: 0, top: 0, bottom: 0, justifyContent: 'center', zIndex: 1, width: 45}}>
-                                        <Icon name='lock' size={20}/>
+                                         <Feather name='lock' size={20} color={language.primary}/>
                                     </View> 
                                     <View style={{flex: 1,borderRadius: 50,}}>
                                         <TextInput
@@ -142,7 +142,7 @@ export default class ChangePasswordScreen extends React.Component{
 
                                 <View style={{marginTop: 20, flexDirection: 'row'}}>
                                     <View style={{position:'absolute', left: 15, right: 0, top: 0, bottom: 0, justifyContent: 'center', zIndex: 1, width: 45}}>
-                                        <Icon name='lock' size={20}/>
+                                         <Feather name='lock' size={20} color={language.primary}/>
                                     </View> 
                                     <View style={{flex: 1,borderRadius: 50,}}>
                                         <TextInput
@@ -162,7 +162,7 @@ export default class ChangePasswordScreen extends React.Component{
 
                                 <View style={{marginTop: 20, flexDirection: 'row'}}>
                                     <View style={{position:'absolute', left: 15, right: 0, top: 0, bottom: 0, justifyContent: 'center', zIndex: 1, width: 45}}>
-                                        <Icon name='lock' size={20}/>
+                                         <Feather name='lock' size={20} color={language.primary}/>
                                     </View> 
                                     <View style={{flex: 1,borderRadius: 50,}}>
                                         <TextInput
@@ -196,7 +196,7 @@ export default class ChangePasswordScreen extends React.Component{
 const style = StyleSheet.create({
 	headingStyle: {
 		fontFamily: 'Gilroy-Bold',
-		color: language.tertiary,
+		color: language.textColor,
 		fontSize: 22,
 	},
 	viewWrapper: {
@@ -232,6 +232,6 @@ const style = StyleSheet.create({
 	},
 	buttonText: {
 		fontFamily: 'Gilroy-Bold', 
-		color: language.ternary
+		color: language.tertiary
 	}
 })

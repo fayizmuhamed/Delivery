@@ -102,7 +102,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.delivery"
+        applicationId "com.delivery.vyaparstore"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
