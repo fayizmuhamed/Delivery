@@ -1,4 +1,4 @@
-package com.delivery.fruitazone;
+package com.delivery.arabiyummalayaliyum;
 
 import android.app.Application;
 
