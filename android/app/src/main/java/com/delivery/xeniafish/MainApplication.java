@@ -1,4 +1,4 @@
-package com.delivery.xeniasupermarket;
+package com.delivery.xeniafish;
 
 import android.app.Application;
 

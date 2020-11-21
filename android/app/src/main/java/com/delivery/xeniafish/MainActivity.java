@@ -1,4 +1,4 @@
-package com.delivery.xeniasupermarket;
+package com.delivery.xeniafish;
 
 import android.os.Bundle;
 
@@ -18,6 +18,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "XeniaSuperMarketDelivery";
+        return "XeniaFishDelivery";
     }
 }
