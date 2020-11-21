@@ -1,4 +1,4 @@
-package com.delivery.fruitazone;
+package com.delivery.xeniarestaurant;
 
 import android.app.Application;
 
