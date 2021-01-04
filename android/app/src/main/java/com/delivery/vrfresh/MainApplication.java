@@ -1,4 +1,4 @@
-package com.delivery.xenia;
+package com.delivery.vrfresh;
 
 import android.app.Application;
 

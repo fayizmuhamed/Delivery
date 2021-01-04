@@ -102,7 +102,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.delivery.xenia"
+        applicationId "com.delivery.vrfresh"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

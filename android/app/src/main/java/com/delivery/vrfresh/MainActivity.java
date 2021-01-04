@@ -1,4 +1,4 @@
-package com.delivery.xenia;
+package com.delivery.vrfresh;
 
 import android.os.Bundle;
 
@@ -18,6 +18,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "VyaparStoreDelivery";
+        return "VRFreshDelivery";
     }
 }
