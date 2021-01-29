@@ -1,4 +1,4 @@
-package com.delivery.kwickbasket;
+package com.delivery.burjbazar;
 
 import android.app.Application;
 

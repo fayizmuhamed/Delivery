@@ -1,10 +1,8 @@
 
 // color
 /*------------------------------------COLOR CODE-------------------------------------------*/
-//export const primary = '#2065B2';  //vyapar store
-//export const secondary = '#237EE2'; // vyapar store
-export const primary = '#243665'
-export const secondary = '#8bd8bd'
+export const primary = '#003375'
+export const secondary = '#f8931d'
 
 
 export const tertiary = '#fff';
