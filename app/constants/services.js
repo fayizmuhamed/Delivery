@@ -1,8 +1,8 @@
 // API
 
 //export const companyidValue = 13;
-export const companyidValue = 27;
-export const domainUrl = 'https://api.estorelogin.com/';
+export const companyidValue = 1;
+export const domainUrl = 'http://api.safetoeatkerala.com/';
 
 // login
 

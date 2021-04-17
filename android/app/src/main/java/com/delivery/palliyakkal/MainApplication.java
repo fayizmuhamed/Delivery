@@ -1,4 +1,4 @@
-package com.delivery.burjbazar;
+package com.delivery.palliyakkal;
 
 import android.app.Application;
 
