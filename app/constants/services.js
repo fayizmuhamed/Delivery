@@ -2,7 +2,7 @@
 
 //export const companyidValue = 13;
 export const companyidValue = 14;
-export const domainUrl = 'https://api.estorelogin.com/';
+export const domainUrl = 'https://api.kwickbasketonline.com/';
 
 // login
 
