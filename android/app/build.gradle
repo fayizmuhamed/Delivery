@@ -102,7 +102,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.delivery.palliyakkal"
+        applicationId "com.delivery.samrudhistore"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
