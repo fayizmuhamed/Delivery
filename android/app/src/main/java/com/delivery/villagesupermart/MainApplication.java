@@ -1,4 +1,4 @@
-package com.delivery.samrudhistore;
+package com.delivery.villagesupermart;
 
 import android.app.Application;
 
