@@ -99,7 +99,7 @@ export default class LoginScreen extends React.Component {
 
 						<View style={{marginTop: 20, flexDirection: 'row'}}>
 							<View style={{position:'absolute', left: 15, right: 0, top: 0, bottom: 0, justifyContent: 'center', zIndex: 1, width: 45}}>
-								<Feather name='user' size={20} color={language.primary}/>
+								<Feather name='phone' size={20} color={language.primary}/>
 							</View> 
 							<View style={{flex: 1,borderRadius: 50,}}>
 								<TextInput

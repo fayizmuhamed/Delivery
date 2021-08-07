@@ -18,7 +18,7 @@ export const black = '#575757'
 
 // Login Screen
 export const loginText = "User Login";
-export const username = "User Name";
+export const username = "Mobile";
 export const password = "Password";
 export const loginLabel = "Login";
 export const loginFirstText = "To Access Delivery Settings"
