@@ -1,4 +1,4 @@
-package com.delivery.comtech;
+package com.delivery.phmart;
 
 import android.os.Bundle;
 
@@ -18,6 +18,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "ComtechDelivery";
+        return "PHMartDelivery";
     }
 }
