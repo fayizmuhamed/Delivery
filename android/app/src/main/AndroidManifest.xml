@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.delivery.samrudhistore">
+  package="com.delivery.firstcatch">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
