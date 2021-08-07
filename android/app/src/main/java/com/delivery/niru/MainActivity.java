@@ -1,4 +1,4 @@
-package com.delivery.phmart;
+package com.delivery.niru;
 
 import android.os.Bundle;
 
@@ -18,6 +18,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "PHMartDelivery";
+        return "NiruDelivery";
     }
 }

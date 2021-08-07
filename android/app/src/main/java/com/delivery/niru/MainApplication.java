@@ -1,4 +1,4 @@
-package com.delivery.phmart;
+package com.delivery.niru;
 
 import android.app.Application;
 

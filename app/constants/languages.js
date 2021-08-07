@@ -1,8 +1,8 @@
 
 // color
 /*------------------------------------COLOR CODE-------------------------------------------*/
-export const primary = '#f72828';
-export const secondary = '#f72828';
+export const primary = '#512011';
+export const secondary = '#c5a35b';
 
 
 export const tertiary = '#fff';
