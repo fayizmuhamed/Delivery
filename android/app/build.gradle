@@ -102,7 +102,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.delivery.niru"
+        applicationId "com.delivery.vmsupermarket"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

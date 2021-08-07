@@ -1,4 +1,4 @@
-package com.delivery.niru;
+package com.delivery.vmsupermarket;
 
 import android.app.Application;
 
