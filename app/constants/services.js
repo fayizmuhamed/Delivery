@@ -2,7 +2,7 @@
 
 //export const companyidValue = 13;
 export const companyidValue = 45;
-export const domainUrl = 'http://api.estorelogin.com/';
+export const domainUrl = 'https://api.estorelogin.com/';
 
 // login
 
