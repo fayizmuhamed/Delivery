@@ -1,4 +1,4 @@
-package com.delivery.vmsupermarket;
+package com.delivery.freshonlive;
 
 import android.os.Bundle;
 
@@ -18,6 +18,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "VMSDelivery";
+        return "FreshOnLiveDevlivery";
     }
 }

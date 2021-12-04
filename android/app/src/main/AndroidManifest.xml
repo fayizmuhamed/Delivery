@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.delivery.vmsupermarket">
+  package="com.delivery.freshonlive">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

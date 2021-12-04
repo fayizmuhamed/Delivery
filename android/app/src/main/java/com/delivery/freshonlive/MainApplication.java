@@ -1,4 +1,4 @@
-package com.delivery.vmsupermarket;
+package com.delivery.freshonlive;
 
 import android.app.Application;
 
