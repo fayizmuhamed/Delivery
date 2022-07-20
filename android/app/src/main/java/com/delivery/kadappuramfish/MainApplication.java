@@ -1,4 +1,4 @@
-package com.delivery.grameenbazar;
+package com.delivery.offerstation;
 
 import android.app.Application;
 
